@@ -1,15 +1,15 @@
-b=0
+p=0
 t=1
-m=1
+max=1
 while True:
     n=int(input())
     if n==0:
         break
-    elif n==b:
+    elif n==p:
         t+=1
-    elif n!=b:
+    elif n!=p:
         t = 1
-    if m<t:
-        m=t
-    a=n
-print(m)
+    if max<t:
+        max=t
+    p=n
+print(max)
