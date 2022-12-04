@@ -1,15 +1,14 @@
-p=0
-t=1
-max=1
-while True:
+c=0
+n=int(input())
+ch=n
+max=0
+while n!=0:
+    if ch==n:
+        c+=1
+        if max < c:
+            max=c
+    else:
+        ch=n
+        c=1
     n=int(input())
-    if n==0:
-        break
-    elif n==p:
-        t+=1
-    elif n!=p:
-        t = 1
-    if max<t:
-        max=t
-    p=n
 print(max)
